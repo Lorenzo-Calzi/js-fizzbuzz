@@ -1,0 +1,21 @@
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg, #F43C23 0%, #662A8B 99.99%, #8A3232 100%);
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    border: 4px solid black;
+}
+
+#print, #type{
+    border: 4px solid black;
+    border-radius: 50px;
+    width: 13%;
+    margin: auto;
+}
+
+

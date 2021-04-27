@@ -1,9 +1,8 @@
-//un programma che stampi i numeri da 1 a 100
 var number = 0;
 
 for(i = 1; i <= 100; i++){
     var number = i;
-    document.getElementById('print').innerHTML = number;
+
     if( number % 3 === 0 && number % 5 === 0 ){
         number = 'FizzBuzz';
         console.log(number);
@@ -17,37 +16,32 @@ for(i = 1; i <= 100; i++){
         console.log(number);
 
     } else{
-        console.log(number);
-        document.getElementById('print').innerHTML = number;
+        console.log(number); 
     }
 }
 
 
+/* PARTE BONUS */
+var randomNumber = Math.floor(Math.random() * 100);
+console.log('Questo numero è random: ' + randomNumber);
+document.getElementById('print').innerHTML = '' + randomNumber;
 
+if( randomNumber % 3 === 0 && randomNumber % 5 === 0 ){
+    randomNumber = 'Ed è : FizzBuzz';
+    console.log(randomNumber);
+    document.getElementById('type').innerHTML = 'FizzBuzz';
 
-/* if( number % 3 === 0){
-    number = 'Fizz';
-    console.log(number);
+} else if (randomNumber % 5 === 0){
+    randomNumber = 'Ed è : Buzz';
+    console.log(randomNumber);
+    document.getElementById('type').innerHTML = 'Buzz';
 
-} else if (number % 5 === 0){
-    number = 'Buzz';
-    console.log(number);
-
-} else if ( number % 3 === 0 && number % 5 === 0 ){
-    number = 'FizzBuzz';
-    console.log(number);
+} else if (randomNumber % 3 === 0){
+    randomNumber = 'Ed è : Fizz';
+    console.log(randomNumber);
+    document.getElementById('type').innerHTML = 'Fizz';
 
 } else{
-    console.log(number);
-} */
-
-
-//per i multipli di 3 stampi “Fizz” al posto del numero
-
-
-//per i multipli di 5 stampi Buzz
-
-
-
-
-//Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+    console.log('é un numero normale : ' + randomNumber);
+    document.getElementById('type').innerHTML = 'Generico';
+}
